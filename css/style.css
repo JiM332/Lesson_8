@@ -1,0 +1,448 @@
+/* &display=swap */
+@import "null.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&display=swap");
+
+/* ================================================================ */
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+body {
+	font-family: "Zen+Kaku+Gothic+Antique", sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+/* ================================================================ */
+
+/* ========================= Цвета ======================================= */
+.red {
+	color: rgb(180, 3, 3);
+	font-weight: 700;
+}
+
+.green {
+	color: rgb(3, 180, 3);
+	font-weight: 700;
+}
+/* ================================================================ */
+/* ========================= Фон и текст кода ======================================= */
+.text-kod {
+	font-family: "Mukta", sans-serif;
+	padding: 20px;
+}
+
+.background-kod {
+	background: rgb(243, 243, 243);
+	border-left: 5px solid rgb(0, 4, 255);
+	margin: 0 0 20px 0;
+}
+
+.background-kod:hover {
+	margin: -10px -10px 28px -10px;
+	box-shadow: 7px 5px 8px #000;
+	border: 1px solid #000;
+	border-left: 5px solid rgb(0, 4, 255);
+}
+
+.ots {
+	padding: 0 0 0 22px;
+}
+
+.kod2 > p:not(:last-child) {
+	padding-bottom: 0px;
+}
+/* ================================================================ */
+/* ========================= Примечание ======================================= */
+.text-prim {
+	padding: 20px;
+}
+.prim {
+	background: rgb(202, 196, 255);
+	border-left: 5px solid rgb(1, 3, 97);
+	margin: 0 0 20px 0;
+}
+
+.prim:hover {
+	margin: -10px -10px 28px -10px;
+	box-shadow: 7px 5px 8px #000;
+	border: 1px solid #000;
+	border-left: 5px solid rgb(1, 3, 97);
+}
+
+.ots {
+	padding: 0 0 0 22px;
+}
+/* ================================================================ */
+/* ========================= Кнопка ======================================= */
+.a-button {
+	display: inline-block;
+	background: green;
+	padding: 10px 35px;
+	margin: 0 0 20px 0;
+	border: 1px solid #000;
+	box-shadow: 0 3px 0 0 #000;
+	border-radius: 10px;
+	color: white;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.a-button:visited {
+	background-color: white;
+	color: green;
+}
+
+.a-button:active {
+	box-shadow: 0 0px 0 0 #000, inset 0 0px 3px 0 #000;
+}
+/* ================================================================ */
+/* ========================= Список ======================================= */
+ul {
+	padding: 0 20px 20px 35px;
+}
+
+ul li:not(:last-child) {
+	margin: 0 0 8px 0;
+}
+
+ul li::before {
+	content: "";
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: #000;
+	border-radius: 50%;
+	margin: 0 10px 0 -26px;
+}
+/* ================================================================ */
+/* ========================= Блоки ======================================= */
+.block {
+	display: inline-block;
+	height: 50px;
+	width: 900px;
+	background: green;
+	margin: 0 0 20px 0;
+	border: 1px solid #000;
+	border-left: 5px solid rgb(1, 3, 97);
+}
+
+.block2 {
+	background: rgb(243, 243, 243);
+	margin: 0 0 20px 0;
+	border-left: 5px solid rgb(1, 3, 97);
+	padding: 20px;
+}
+
+.block2:hover {
+	margin: -10px -10px 28px -10px;
+	box-shadow: 7px 5px 8px #000;
+	border: 1px solid #000;
+	border-left: 5px solid rgb(1, 3, 97);
+}
+
+.block2 p:not(.classy) {
+	color: red;
+}
+
+.block2 > *:not(p) {
+	color: green;
+}
+
+.block3 {
+	background: rgb(243, 243, 243);
+	margin: 0 0 20px 0;
+	border-left: 5px solid rgb(1, 3, 97);
+	padding: 20px;
+}
+
+.block3:hover {
+	margin: -10px -10px 28px -10px;
+	box-shadow: 7px 5px 8px #000;
+	border: 1px solid #000;
+	border-left: 5px solid rgb(1, 3, 97);
+}
+
+.block3 > p:first-child {
+	color: lime;
+}
+
+.block4 {
+	background: rgb(243, 243, 243);
+	margin: 0 0 20px 0;
+	border-left: 5px solid rgb(1, 3, 97);
+	padding: 20px;
+}
+
+.block4:hover {
+	margin: -10px -10px 28px -10px;
+	box-shadow: 7px 5px 8px #000;
+	border: 1px solid #000;
+	border-left: 5px solid rgb(1, 3, 97);
+}
+
+.block4 > :first-of-type {
+	background: lime;
+}
+
+.block5 {
+	background: rgb(243, 243, 243);
+	margin: 0 0 20px 0;
+	border-left: 5px solid rgb(1, 3, 97);
+	padding: 20px;
+}
+
+.block5:hover {
+	margin: -10px -10px 28px -10px;
+	box-shadow: 7px 5px 8px #000;
+	border: 1px solid #000;
+	border-left: 5px solid rgb(1, 3, 97);
+}
+
+.block5 > ul li:last-child {
+	background: lime;
+}
+
+.block6 {
+	background: rgb(243, 243, 243);
+	margin: 0 0 20px 0;
+	border-left: 5px solid rgb(1, 3, 97);
+	padding: 20px;
+}
+
+.block6:hover {
+	margin: -10px -10px 28px -10px;
+	box-shadow: 7px 5px 8px #000;
+	border: 1px solid #000;
+	border-left: 5px solid rgb(1, 3, 97);
+}
+
+.block6 > p:last-of-type {
+	color: red;
+}
+
+.block7 {
+	background: rgb(243, 243, 243);
+	margin: 0 0 20px 0;
+	border-left: 5px solid rgb(1, 3, 97);
+	padding: 20px;
+}
+
+.block7:hover {
+	margin: -10px -10px 28px -10px;
+	box-shadow: 7px 5px 8px #000;
+	border: 1px solid #000;
+	border-left: 5px solid rgb(1, 3, 97);
+}
+/* ============================= Настройка блока 7 ============================================= */
+.block7 .first > span {
+	padding: 5px;
+	border: 1px solid green;
+	display: inline-block;
+	margin-bottom: 3px;
+}
+
+.block7 .second > span {
+	padding: 5px;
+	border: 1px solid green;
+	display: inline-block;
+	margin-bottom: 3px;
+}
+
+.block7 .second > p {
+	padding: 5px;
+	border: 1px solid green;
+	display: inline-block;
+	margin-bottom: 3px;
+}
+
+.block7 .third > span {
+	padding: 5px;
+	border: 1px solid green;
+	display: inline-block;
+	margin-bottom: 3px;
+}
+
+.block7 .third > p {
+	padding: 5px;
+	border: 1px solid green;
+	display: inline-block;
+	margin-bottom: 3px;
+}
+/* ========================================================================== */
+.block7 .first > span:nth-child(2n + 1) {
+	background: lime;
+}
+
+.block7 .second > span:nth-child(2n + 1) {
+	background: lime;
+}
+
+.block7 .third > span:nth-of-type(2n + 1) {
+	background: lime;
+}
+
+.block8 {
+	background: rgb(243, 243, 243);
+	margin: 0 0 20px 0;
+	border-left: 5px solid rgb(1, 3, 97);
+	padding: 20px;
+}
+
+.block8:hover {
+	margin: -10px -10px 28px -10px;
+	box-shadow: 7px 5px 8px #000;
+	border: 1px solid #000;
+	border-left: 5px solid rgb(1, 3, 97);
+}
+
+.block8::first-line {
+	color: blue;
+	text-transform: uppercase;
+}
+
+.block9 {
+	background: rgb(243, 243, 243);
+	margin: 0 0 20px 0;
+	border-left: 5px solid rgb(1, 3, 97);
+	padding: 20px;
+}
+
+.block9:hover {
+	margin: -10px -10px 28px -10px;
+	box-shadow: 7px 5px 8px #000;
+	border: 1px solid #000;
+	border-left: 5px solid rgb(1, 3, 97);
+}
+
+.block9 > p:not(:last-child) {
+	padding: 0 0 8px 0;
+}
+
+.block9 p::first-letter {
+	color: blue;
+	font-size: 36px;
+}
+
+.block10 {
+	background: rgb(243, 243, 243);
+	margin: 0 0 20px 0;
+	border-left: 5px solid rgb(1, 3, 97);
+	padding: 20px;
+}
+
+.block10:hover {
+	margin: -10px -10px 28px -10px;
+	box-shadow: 7px 5px 8px #000;
+	border: 1px solid #000;
+	border-left: 5px solid rgb(1, 3, 97);
+}
+
+.block10 span::before {
+	content: "«";
+	color: blue;
+}
+
+.block10 span::after {
+	content: "»";
+	color: red;
+}
+
+.block11 {
+	background: rgb(243, 243, 243);
+	border-left: 5px solid rgb(1, 3, 97);
+	padding: 20px;
+}
+
+.block11:hover {
+	margin: -10px -10px 28px -10px;
+	box-shadow: 7px 5px 8px #000;
+	border: 1px solid #000;
+	border-left: 5px solid rgb(1, 3, 97);
+}
+
+.block11 span::after {
+	content: "";
+	display: block;
+	background: #000;
+	height: 1px;
+	width: 30px;
+	margin: 2px 0 0 0;
+}
+/* ================================================================ */
+a:hover h2 {
+	text-decoration: underline;
+}
+
+h1 {
+	font-size: 36px;
+	font-weight: 900;
+}
+
+h2 {
+	font-size: 32px;
+	font-weight: 900;
+	margin: 0 0 20px 0;
+	display: inline-block;
+}
+
+h3 {
+	font-size: 24px;
+	font-weight: 700;
+	margin: 0 0 20px 0;
+}
+
+.header {
+	margin: 0 0 40px 0;
+}
+
+.black {
+	font-weight: 700;
+}
+
+.silka {
+	display: inline-block;
+	margin: 0 0 20px 0;
+}
+
+.silka:active {
+	color: red;
+}
+
+.block:hover {
+	background: #f89b4d;
+}
+
+.text {
+	margin: 0 0 20px 0;
+}
+
+.text:hover {
+	background: rgb(243, 243, 243);
+}
+
+.background-grey {
+	background: rgb(235, 235, 233);
+	text-decoration: underline;
+}
+
+a:hover .background-grey {
+	text-decoration: none;
+}
+
+.podch {
+	width: 1000px;
+	height: 1px;
+	border-top: 5px double #000;
+	margin: 0 0 20px 0;
+}
+
+.inline {
+	display: inline;
+}
